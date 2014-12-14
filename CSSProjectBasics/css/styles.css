@@ -1,18 +1,25 @@
+/* reset all padding and margin */
+
+* {
+ margin: 0;
+padding: 0;
+color: red;
+}
 
 
 body {
        color: #878787;
       margin: 0;
-  text-align: center;
 }
 
 header {
-  background-color: orange;
+    background-color: orange;  
 }
 
+
 h1 {
-    font-size: 90px;
-        color: white;
+  font-size: 90px;
+      color: white;
 }
 
 h2 {
@@ -21,7 +28,7 @@ h2 {
 
 h3 {
   font-size: 20px;
-  color: #48525c;
+      color: #48525c;
 }
 
 p {
@@ -29,13 +36,45 @@ p {
   
 }
 
-#primary-content {
-  border: 3px solid red;
+
+a:link {
+ color: orange;
+ text-decoration: none;
 }
 
-#secondary-content {
-
+a:hover {
+  border-bottom: 3px solid forestgreen;
 }
+
+a:active {
+ color: lightcoral; 
+}
+
+:focus {
+ color: white;
+ background-color: grey;
+}
+
+
+ul, ol li {
+ color: charcole;
+ margin-bottom: 5px;
+}
+
+.primary-content {
+    text-align:left;
+}
+
+.secondary-content {
+    
+}
+
+.topBorder {
+ border-top: 2px solid lightgrey; 
+}
+
+
+/*  footer   */
 
 #footer {
   padding: 60 0;
