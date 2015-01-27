@@ -1,0 +1,120 @@
+
+body {
+
+    background: 
+                linear-gradient(#676777, transparent 40%),
+                linear-gradient(0deg, #676777, transparent),
+                #676777 url('https://unsplash.imgix.net/uploads/14115890754139bc8568d/d5e1ad1d?q=75&fm=jpg&s=4d0356a1dd7b363ade2f7185d45c62fa') no-repeat center;
+
+    background-size: cover;
+}
+
+@font-face {
+    
+    font-family: 'Alolition Regular';
+
+    /*  CSS for cross browser font formats  */
+    src: url('../fonts/abolition-regular-webfont.eot');
+    src: url('../fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/abolition-regular-webfont.woff') format('woff'),
+         url('../fonts/abolition-regular-webfont.ttf') format('truetype');
+}
+
+h1, h2 {font-family: 'Abolition Regular', Helvetica, Arial, sans-serif; }
+
+h1 {
+  
+    font-size 5.625rem /* 90px/16 */
+    color: rgba(155, 155, 155, 1);
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 1.3;
+    text-shadow: 3px 5px 8px #222;
+    margin: 105px 60px;
+}
+
+
+h2 {
+  
+    font-size 5.625rem /* 90px/16 */
+    color: rgba(55, 55, 55, 1);
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 1.3;
+    /*  3D text effect  */
+    text-shadow: 0 1px 0 #fff,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+.main-heading {
+  
+  text-shadow: 0 0 5px #be7b31 ;
+  
+}
+
+.title {
+
+  text-shadow: 1px 3px 0 #e59740;
+  
+}
+.theDiv {
+
+
+    text-align: left;
+    padding: 18% 24%;
+    
+    margin: 105px 23px 60px;
+              /* x,   y   blur spread   color */
+    box-shadow: 15px 15px 20px -10px   rgba(0,0,0, .4);
+              
+    border-radius: 10px;
+        /*  set a background gradiant  
+            Definition of the ending shape 
+            radial-gradient( circle, … ) -- Synonym of radial-gradient( circle farthest-corner, …)  
+            radial-gradient( ellipse, … ) -- Synonym of radial-gradient( ellipse farthest-corner, …) 
+            radial-gradient( <extent-keyword>, … ) /* It draws a circle 
+            radial-gradient( circle radius, … ) /* A centered circle of the given length. It can't be a percentage 
+            radial-gradient( ellipse x-axis y-axis, … ) /* The two semi-major axis are given, horizontal, then vertical 
+
+            Definition of the position of the shape 
+            radial-gradient (… at <position>, … ) 
+
+            Definition of the color stops 
+            radial-gradient (…, <color-stop>) 
+            radial-gradient (…, <color-stop>, <color-stop>) 
+        */  
+    background-image: linear-gradient(-45deg ,#ffa949, firebrick ); 
+
+    height: 150px;
+    max-width:  500px;
+}
+
+
+
+@media (max-width: 960px){
+
+    .theDiv {
+        padding: 10% 5%;
+         margin: 75px 20px;
+    }
+
+}
+
+
+@media (min-width: 480px) and (max-width: 700px) {
+
+    .theDiv {
+        padding: 5% 10%;
+         margin: 25px 10px;
+    }
+}
