@@ -1,0 +1,40 @@
+body {
+  /*padding-top: 50px;*/
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.navbar-fixed-top { 
+      transition: background-color 1s ease 0s;
+background-color: rgba(3,3,3,1);}
+
+.opaque { 
+           color: #333;
+          border: none;
+      transition: background-color 1s ease 0s;  
+     padding-top: 40px;
+background-color: rgba(255,255,255,0);
+}
+.opaque a:link {
+    background-color:transparent;
+}
+
+/*.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover*/
+
+
+header {
+
+     background: 
+                linear-gradient(#676777, transparent 40%),
+                linear-gradient(0deg, #ffffff, transparent),
+                #676777 url('https://unsplash.imgix.net/uploads/14115890754139bc8568d/d5e1ad1d?q=75&fm=jpg&s=4d0356a1dd7b363ade2f7185d45c62fa') no-repeat center;
+
+    background-size: cover;
+
+    min-height: 650px;
+    margin-top: 0;
+    padding-top: 10em;
+    padding-left: 20em;
+}
