@@ -1,13 +1,4 @@
 
-// set variable colors
-// var bgColor = "#444";
-// var textColor = "#FF9933";
-// store div id myDiv in a variable
-// var myDiv = document.getElementById('myDiv');
-// assign color to div
-// myDiv.style.background = bgColor;
-// myDiv.style.color = textColor;
-
 /* / working code
 window.onscroll = scroll;
 
@@ -47,12 +38,12 @@ $(window).scroll(function() {
 var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
   if (scrollTop > 500) {
     if (!appended) {
-      document.body.appendChild(bookmark);
+      $('.navbar-fixed-top').removeClass('opaque');
       appended = true;
     }
   } else {
     if (appended) {
-      document.body.removeChild(bookmark);
+      $('.navbar-fixed-top').addClass('opaque');
       appended = false;
     }
   }
