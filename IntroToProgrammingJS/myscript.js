@@ -64,10 +64,10 @@ var sayHello = function(){
     console.log(message);
 }
 
-
 sayHello();
 
 
+// debug the message
 var debug = function(message) 
 {
     console.log("debug", message);
@@ -77,10 +77,31 @@ var i = 23;
 
 debug(" i has been set to " + i);
 
-
 var doubleNumber = function(num) 
 {
     return num * 2;
 }
 
 debug(doubleNumber(7));
+
+
+// Becareful defining global variables 
+// see world below
+
+var world = "World";
+
+function nowSayHello() {
+  var hello = "Hello";
+  // inner function
+  function inner() {
+    var extra = "But wait, there is more!";
+    console.log(hello + world + extra);
+  }
+  inner();
+}
+
+nowSayHello();
+
+
+
+
