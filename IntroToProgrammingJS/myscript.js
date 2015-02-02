@@ -85,13 +85,14 @@ var doubleNumber = function(num)
 debug(doubleNumber(7));
 
 
-// Becareful defining global variables 
-// see world below
 
-var world = "World";
+// Scope
+// Becareful defining global variables 
+
+var world = "World ";
 
 function nowSayHello() {
-  var hello = "Hello";
+  var hello = "Hello ";
   // inner function
   function inner() {
     var extra = "But wait, there is more!";
@@ -101,6 +102,64 @@ function nowSayHello() {
 }
 
 nowSayHello();
+
+
+
+// Hoisting
+function doSomething(doit) {
+  var color = "blue", 
+      number, 
+      name  = "Jim";
+
+  number = 10;
+  if(doit) {
+    color = "red";
+    number = 10;
+    console.log("Color in if(){}", color);
+  }
+  console.log("Color in if(){}", color);
+}
+doSomething(false);
+
+
+
+// Shadowing
+
+var meColor = "blue";
+console.log("My Color before My Func()", myColor);
+
+function myFunc () {
+  var myColor = "yellow";
+  console.log("My Color inside My Func()", myColor);
+}
+
+myFunc();
+
+
+
+
+// keep wifi connection
+// while true; do
+//   echo "$(date -u): \c"  
+//   dig @8.8.8.8 +tries=1 +time=3 google.com | \
+//           grep 'Query time' | \
+//           cut -d ' ' -f 4 -f 5
+//   if [ ${PIPESTATUS[0]} -ne 0 ] ; then
+//      sudo ifconfig en0 down
+//      sudo ifconfig en0 up
+//      echo "--> Bounced en0\n"
+//   fi
+//   sleep 5
+// done
+
+
+
+
+
+
+
+
+
 
 
 
