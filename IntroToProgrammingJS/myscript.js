@@ -149,10 +149,14 @@
 //document.write("<h1>Hello world</h1>");
 
 
+console.log("Begin Program");
 
-alert("hello there");
-document.write("<p>No it works!</p>");
+alert("Help me fix this program!");
+alert("Can you get this message to appear?)";
+document.write("<h2>My first JavaScript program</h2>");
+document.wrong("<p>I'm practicing 'debugging'.</p>");
 
+console.log("Begin Program");
 
 
 // BASH keep wifi connection
