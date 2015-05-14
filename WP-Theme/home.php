@@ -6,7 +6,7 @@
       <!-- Primary Column -->
       <div class="small-12 medium-7 medium-offset-1 medium-push-4 columns">
         <div class="primary">
-    
+        
 		    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
               <article <?php post_class('post'); ?>>
@@ -19,13 +19,13 @@
                       </span>
                       by <?php the_author_posts_link(); ?>                    
                   </li>
-                  <li class="cat">in <?php the_category( ', ' ); ?></li>
+                  <li class="cat">in <?php the_category('&gt; '); ?></li>
                   <li class="date">on <?php the_time('F j, Y'); ?></li>
                 </ul>    
                 <?php if( get_the_post_thumbnail() ) : ?>
-                <div class="img-container">
+                  <div class="img-container">
                   <?php the_post_thumbnail('large'); ?>
-                </div>  
+                  </div>  
                 <?php endif; ?>          	
               </article>
      

@@ -1,5 +1,12 @@
 <?php
 
+/**
+ * Dequeue the jQuery UI script.
+ *
+ * Hooked to the wp_print_scripts action, with a late priority (100),
+ * so that it is after the script was enqueued.
+ */
+
 
 add_theme_support( 'menus' );
 add_theme_support( 'post-thumbnails' );
