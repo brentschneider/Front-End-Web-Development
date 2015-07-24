@@ -15,16 +15,25 @@
 
 <form action="index.html" method="post">
 
-    <h1>Sign up for goodies</h1>
-    
-	<input type="text" id="name" name="user_name" placeholder="Enter your name" required>
-	<input type="email" id="email" name="user_email" required placeholder="Enter a valid email address">
-	<input type="password" id="password" name="user_password" required>
+  <h1>Sign up for goodies</h1>
 
-	<textarea id="bio" name="user_bio"> </textarea>
+	<fieldset>
+		<legend ><span class="number">1</span> Your information</legend>
+	  <label for="name" >name:</label>
+		<input type="text" id="name" name="user_name" placeholder="Enter your name" required>
+		<label for="email">email:</lable>
+		<input type="email" id="email" name="user_email" required placeholder="Enter a valid email address">
+		<label for="password">password:</label>
+		<input type="password" id="password" name="user_password" required>
+	</fieldset>
 
+	<fieldset>
+		<legend ><span class="number">2</span> Bio</legend>
+		<label for="bio">biography:</label>
+		<textarea id="bio" name="user_bio"> </textarea>
+	</fieldset>
+  <button type="submit" width="2em">submit</button>
 
-    <button type="submit" width="2em">submit</button>
 </form>
 
 
@@ -34,6 +43,3 @@
 
 
 </html>
-
-
-
