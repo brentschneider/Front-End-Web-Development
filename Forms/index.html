@@ -1,59 +1,90 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf8" >
-		<meta name="viewport" content="width=device-width, inital-scale=1.0">
-		<title>Sign me up</title>
-		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Nunito:400,300">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
+
+<head>
+	<meta charset="utf8">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+	<title>Sign me up</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Nunito:400,300">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 
 </head>
+
 <body>
 
-<form action="index.html" method="post">
+	<form action="index.html" method="post">
 
-  <h1>Sign up for goodies</h1>
+		<h1>Sign up for goodies</h1>
 
-	<fieldset>
-		<legend ><span class="number">1</span> Your information</legend>
-	    <label for="name" >name:</label>
-		    <input type="text" id="name" name="user_name" placeholder="Enter your name" required>
-		  <label for="email">email:</lable>
-		    <input type="email" id="email" name="user_email" required placeholder="Enter a valid email address">
-		  <label for="password">password:</label>
-		    <input type="password" id="password" name="user_password" required>
-	</fieldset>
+		<fieldset>
+			<legend>
+				<span class="number">1</span> Your information</legend>
+			<label for="name">name:</label>
+			<input type="text" id="name" name="user_name" placeholder="Enter your name" required>
+			<label for="email">email:</lable>
+				<input type="email" id="email" name="user_email" required placeholder="Enter a valid email address">
+				<label for="password">password:</label>
+				<input type="password" id="password" name="user_password" required>
+		</fieldset>
 
-	<fieldset>
-		<legend ><span class="number">2</span> Bio</legend>
-		  <label for="bio">biography:</label>
+		<fieldset>
+			<legend>
+				<span class="number">2</span> Bio</legend>
+			<label for="bio">biography:</label>
 
-		  <textarea id="bio" name="user_bio"> </textarea>
+			<textarea id="bio" name="user_bio"> </textarea>
 
-		<lable for="job">Job role:</lable> <select id="job"> <optgroup label="web"> <option
-		value="Frontend_Developer">Front-End Developer</option> <option value="PHP_Developer">PHP Developer</option> <option
-		value="Full_Stack_Developer">Full Stack Developer</option> <option value="Python_Developer">Python Developer</option>
-		<option value="Rails_Developer">Rails Developer</option> <option value="Wordpress_Developer">Wordpress
-		Developer</option> <option value="Javascript_Developer">Javascript Developer</option> </optgroup> <optgroup
-		label="mobile"> <option value="iOS_Developer">iOS Developer</option> <option value="Android_Developer">Android
-		Developer</option> <option value="Responsive_Designer">Responsive Designer</option> </optgroup> </select>
+			<label for="job">Job role:</label>
+			<select id="job">
+				<optgroup label="web">
+					<option value="Frontend_Developer">Front-End Developer</option>
+					<option value="PHP_Developer">PHP Developer</option>
+					<option value="Full_Stack_Developer">Full Stack Developer</option>
+					<option value="Python_Developer">Python Developer</option>
+					<option value="Rails_Developer">Rails Developer</option>
+					<option value="Wordpress_Developer">Wordpress Developer
+					</option>
+					<option value="Javascript_Developer">Javascript Developer</option>
+				</optgroup>
+				<optgroup label="mobile">
+					<option value="iOS_Developer">iOS Developer</option>
+					<option value="Android_Developer">Android Developer
+					</option>
+					<option value="Responsive_Designer">Responsive Designer</option>
+				</optgroup>
+			</select>
 
-		<label>Confirm your age: </label>
-	    <input type="radio" id="under_13" value="under_13" name="user_age">
-			  <label for="under_13" class="light">Under 13</label>
-			</input>
-				<br>
+			<label>Confirm your age: </label>
+
+			<input type="radio" id="under_13" value="under_13" name="user_age">
+			<label for="under_13" class="light">Under 13</label>
+
+			<br>
 			<input type="radio" id="over_13" value="over_13" name="user_age" class="light">
-		    <label for="over_13" class="light">13 or Older</label>
-			</input>
+			<label for="over_13" class="light">13 or Older</label>
+
+			<br>
 
 
-	</fieldset>
 
-	<button type="submit" width="2em">submit</button>
+			<label> Interests:</label>
+			
+			<input type="checkbox" id="development" name="user_interest" value="intrest_development">
+			<label for="development" class="light">Development</label>
 
-</form>
+			<input type="checkbox" id="design" name="user_interest" value="intrest_design">
+			<label for="design" class="light">Design</label>
+
+			<input type="checkbox" id="projectmanagement" name="user_interest" value="intrest_pm">
+			<label for="projectmanagement" class="light">Project Mgmt.</label>
+
+
+		</fieldset>
+
+		<button type="submit" width="2em">submit</button>
+
+	</form>
 
 
 
