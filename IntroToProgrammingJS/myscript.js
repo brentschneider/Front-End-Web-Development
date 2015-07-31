@@ -3,7 +3,7 @@
 // Just some basic javascript code
 //   using prompt
 //   console.log
-// */ 
+// */
 
 // Console - view in browser chrome dev tools > console
 // console.log("Hello world");
@@ -18,6 +18,20 @@
 // if (name == "Jim"){
 //     alert("Dam it " + name + "! I'm giving it all she got!");
 // }
+
+var upper = 1000;
+var randomNumber = getRandomNumber(upper);
+var guesses;
+var attempts = 0;
+
+
+function getRandomNumber(upper) {
+  return Math.floor( Math.random() * upper ) + 1;
+
+}
+
+
+
 
 
 // // while statement
@@ -56,7 +70,7 @@
 
 
 // // Functions storing behavior
-// // envoke using parentahsies 
+// // envoke using parentahsies
 
 // var sayHello = function(){
 
@@ -69,7 +83,7 @@
 
 
 // // debug the message
-// var debug = function(message) 
+// var debug = function(message)
 // {
 //     console.log("debug", message);
 // }
@@ -78,7 +92,7 @@
 
 // debug(" i has been set to " + i);
 
-// var doubleNumber = function(num) 
+// var doubleNumber = function(num)
 // {
 //     return num * 2;
 // }
@@ -87,8 +101,14 @@
 
 
 
-// // Scope
-// // Becareful defining global variables 
+/*
+
+  Scope
+
+*/
+
+
+// // Becareful defining global variables
 
 // var world = "World ";
 
@@ -106,10 +126,16 @@
 
 
 
-// // Hoisting
+/*
+
+Hoisting
+
+*/
+
+
 // function doSomething(doit) {
-//   var color = "blue", 
-//       number, 
+//   var color = "blue",
+//       number,
 //       name  = "Jim";
 
 //   number = 10;
@@ -161,7 +187,7 @@ console.log("Begin Program");
 
 // BASH keep wifi connection
 // while true; do
-//   echo "$(date -u): \c"  
+//   echo "$(date -u): \c"
 //   dig @8.8.8.8 +tries=1 +time=3 google.com | \
 //           grep 'Query time' | \
 //           cut -d ' ' -f 4 -f 5
@@ -172,16 +198,3 @@ console.log("Begin Program");
 //   fi
 //   sleep 5
 // done
-
-
-
-
-
-
-
-
-
-
-
-
-
