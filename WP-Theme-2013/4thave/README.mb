@@ -1,0 +1,12 @@
+## Readme
+
+Child theme to twentythirteen
+
+
+* note inc folder is for parent theme
+all other files are in child folder
+
+
+Tested on iphone 4 / nexus 5 / ipad mini / macbook pro & dell win 7
+
+todo: Add functions file in child theme and move inc > Custom_Headers file into child folder.

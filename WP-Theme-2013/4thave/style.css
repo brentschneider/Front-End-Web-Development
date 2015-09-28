@@ -1,0 +1,160 @@
+/*
+Theme Name: Fourth Ave Chiropractic
+Theme URI: http://www.fourthavechiropractic.com/
+Description: Responsive website for 4th Avenue Chiropractic
+Author: Brent Schneider
+Author URI: http://www.milkshakeinteractive.com
+Template: twentythirteen
+Version: 1.0
+*/
+@import "../twentythirteen/style.css";
+
+
+/*
+* Header
+* ----------------------------------------------------------------------------
+*/
+
+.site-header{
+  min-height: 170px;
+}
+
+.site-logo, .site-right {
+  min-height: 170px;
+}
+
+.site-logo {
+  float:left;
+  padding-top: 24px;
+  margin-left: 5%;
+  text-align: left;
+  width:45%;
+}
+
+
+.site-right {
+  float: right;
+  padding-top: 24px;
+  margin-right: 5%;
+  width: 35%;
+  text-align: center;
+  }
+
+  header a {
+    color:#ededed;
+  }
+
+  header a:hover{
+    color:#da4924;
+    text-decoration: none;
+  }
+
+  .site-title {
+    	font-size: 22px;
+    	font-weight: bold;
+    	line-height: 1;
+    	margin: 0;
+    	padding: 0;
+      padding-top:22px
+    }
+  .site-description {
+    	/* font-family: "Source Sans Pro", Helvetica, sans-serif; */
+      font-size: 22px;
+      font-weight: bold;
+    	margin: 0;
+  }
+
+/* end right */
+
+
+
+.navbar {
+  clear: both;
+  background: #a90329; /* Old browsers */
+  background: -moz-linear-gradient(top,  #842c16 0%, #561408 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#842c16),color-stop(100%,#561408)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #842c16 0%, #561408 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #842c16 0%, #561408 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #842c16 0%, #561408 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #842c16 0%, #561408 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#842c16', endColorstr='#561408',GradientType=0 ); /* IE6-9 */
+
+  border-top: 2px solid #333333;
+  border-bottom: 2px solid #333333;
+}
+
+.nav-menu li a {
+    color: #EDEDED;
+    display: block;
+    font-size: 15px;
+    line-height: 1;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-menu .current_page_item > a, .nav-menu .current_page_ancestor > a, .nav-menu .current-menu-item > a, .nav-menu .current-menu-ancestor > a {
+    color: #da4924;
+    font-weight: bold;
+}
+
+.nav-menu li:hover > a, .nav-menu li a:hover, .nav-menu li:focus > a, .nav-menu li a:focus {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+
+.nav-menu .sub-menu, .nav-menu .children {
+  border-bottom: 2px solid #333333;
+  border-left: 2px solid #333333;
+  border-right: 2px solid #333333;
+}
+
+
+/*
+* Content info
+* ----------------------------------------------------------------------------
+*/
+
+.entry-header {
+    margin-bottom: 0;
+}
+
+
+.entry-content {
+  min-height: 450px;
+}
+
+
+
+
+
+
+/*
+
+Footer
+
+*/
+
+.site-footer{
+  background: #b5b08d;
+}
+
+.site-footer .sidebar-container{
+  background: #b5b08d;
+}
+
+.widget .widget-title {
+  font-weight: bold;
+}
+
+.site-footer .widget a {
+  color:#7f2913;
+}
+
+
+@media (min-width: 768px){
+  .site-mobile {
+    display: none;
+  }
+}
