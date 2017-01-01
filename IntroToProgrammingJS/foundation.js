@@ -1,9 +1,9 @@
 
-/* / working code
+/* / working code */
 window.onscroll = scroll;
 
 function scroll () {
-    
+
     var scrollTop = document.body.scrollTop;
 
     // if (scrollTop > 200) {
@@ -23,30 +23,3 @@ function scroll () {
     }
 
 };
-*/
-
-$(window).scroll(function() {
-    if($(this).scrollTop() > 50) {
-        $('.navbar-fixed-top').removeClass('opaque');
-    } else {
-        $('.navbar-fixed-top').addClass('opaque');
-        
-    }
-});
-
-/*
-var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-  if (scrollTop > 500) {
-    if (!appended) {
-      $('.navbar-fixed-top').removeClass('opaque');
-      appended = true;
-    }
-  } else {
-    if (appended) {
-      $('.navbar-fixed-top').addClass('opaque');
-      appended = false;
-    }
-  }
-
-  */
-
