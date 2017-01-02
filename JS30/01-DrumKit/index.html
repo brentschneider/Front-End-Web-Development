@@ -6,60 +6,91 @@
 
   <style>
 
+  html {
+    height:100%;
+    background:
+    /*linear-gradient(#fff, transparent 90%),*/
+    linear-gradient(0deg, #fff, transparent 95%),
+    #fff url("http://lorempixel.com/360/200") no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+  }
 
+  .keys {
+    margin: 0 20%;
+  }
 
+  .key {
+    border:4px solid black;
+    border-radius:5px;
+    background-color: rgba(3, 3, 2, 0.5);
+    display: inline-block;
+    height: 100px;
+    width:  165px;
+    margin: 12px;
+    padding:2rem .2rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #fff;
 
+  }
 
+  kbd {
+    display: block;
+    font-size: 35px;
+  }
 
-  </style>
+</style>
 </head>
 <body>
 
   <div class="keys">
     <div data-key="65" class="key">
       <kbd>a</kbd>
-      <span class="sound">Boom</span>
+      <span class="soundoff">Boom</span>
     </div>
 
     <div data-key="83" class="key">
       <kbd>s</kbd>
-      <span class="sound">Clap</span>
+      <span class="soundoff">Clap</span>
     </div>
 
     <div data-key="68" class="key">
       <kbd>d</kbd>
-      <span class="sound">hihat</span>
+      <span class="soundoff">hihat</span>
     </div>
 
     <div data-key="70" class="key">
       <kbd>f</kbd>
-      <span class="sound">openhat</span>
+      <span class="soundoff">openhat</span>
     </div>
 
     <div data-key="71" class="key">
       <kbd>g</kbd>
-      <span class="sound">kick</span>
+      <span class="soundoff">kick</span>
     </div>
 
     <div data-key="72" class="key">
       <kbd>h</kbd>
-      <span class="sound">ride</span>
+      <span class="soundoff">ride</span>
     </div>
     <div data-key="74" class="key">
       <kbd>j</kbd>
-      <span class="sound">snare</span>
+      <span class="soundoff">snare</span>
     </div>
     <div data-key="75" class="key">
       <kbd>k</kbd>
-      <span class="sound">tom</span>
+      <span class="soundoff">tom</span>
     </div>
     <div data-key="76" class="key">
       <kbd>l</kbd>
-      <span class="sound">tink</span>
+      <span class="soundoff">tink</span>
     </div>
     <div data-key="32" class="key">
       <kbd>spacebar</kbd>
-      <span class="sound">inseption</span>
+      <span class="soundoff">inseption</span>
     </div>
   </div>
 
@@ -67,8 +98,8 @@
   <audio data-key="65" src="audio/boom.wav"></audio>
   <audio data-key="83" src="audio/clap.wav"></audio>
   <audio data-key="68" src="audio/hihat.wav"></audio>
-  <audio data-key="70" src="audio/kick.wav"></audio>
-  <audio data-key="71" src="audio/openhat.wav"></audio>
+  <audio data-key="70" src="audio/openhat.wav"></audio>
+  <audio data-key="71" src="audio/kick.wav"></audio>
   <audio data-key="72" src="audio/ride.wav"></audio>
   <audio data-key="74" src="audio/snare.wav"></audio>
   <audio data-key="75" src="audio/tom.wav"></audio>
@@ -80,9 +111,11 @@
 <script>
   window.addEventListener('keydown', function(e) {
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+
     if(!audio) return; // If no audio is found stop from running
     audio.currentTime = 0;
     audio.play();
+
   });
 </script>
 
